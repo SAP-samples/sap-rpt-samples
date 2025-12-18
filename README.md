@@ -1,5 +1,5 @@
 # SAP Relational Pretrained Transformer Samples
-This default template for SAP Samples repositories includes files for README, LICENSE, and REUSE.toml. All repositories on github.com/SAP-samples will be created based on this template.
+[![SAP](https://img.shields.io/badge/SAP%20RPT%201-grey?logo=sap)](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/sap-rpt-1) [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-rpt-1-oss)](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-1-oss)
 
 ## Description
 This repository contains a Bruno API collection and code samples for using SAP Relational Pretrained Transformer (RPT) models.
