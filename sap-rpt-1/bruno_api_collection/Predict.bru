@@ -1,0 +1,80 @@
+meta {
+  name: Predict
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/predict
+  body: json
+  auth: inherit
+}
+
+headers {
+  :
+}
+
+body:json {
+  {
+    "index_column": "id",
+    "prediction_config": {
+      "target_columns": [
+        {
+          "name": "category",
+          "prediction_placeholder": "?",
+          "task_type": "classification"
+        }
+      ]
+    },
+    "parse_data_types": true,
+    "columns": {
+      "id": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "product": [
+        "Laptop",
+        "Mouse",
+        "Keyboard",
+        "Monitor"
+      ],
+      "price": [
+        899,
+        25,
+        75,
+        350
+      ],
+      "category": [
+        "Electronics",
+        "Accessories",
+        "Accessories",
+        "?"
+      ],
+      "stock": [
+        "150",
+        "500",
+        "320",
+        "200"
+      ]
+    },
+    "data_schema": {
+      "id": {
+        "dtype": "numeric"
+      },
+      "product": {
+        "dtype": "string"
+      },
+      "price": {
+        "dtype": "numeric"
+      },
+      "category": {
+        "dtype": "string"
+      },
+      "stock": {
+        "dtype": "numeric"
+      }
+    }
+  }
+}

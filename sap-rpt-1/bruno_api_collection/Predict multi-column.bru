@@ -1,0 +1,84 @@
+meta {
+  name: Predict multi-column
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/predict
+  body: json
+  auth: inherit
+}
+
+headers {
+  :
+}
+
+body:json {
+  {
+    "index_column": "ID",
+    "prediction_config": {
+      "target_columns": [
+        {
+          "name": "COSTCENTER",
+          "prediction_placeholder": "[PREDICT]",
+          "task_type": "classification"
+        },
+        {
+          "name": "PRICE",
+          "prediction_placeholder": "[?]",
+          "task_type": "regression"
+        }
+      ]
+    },
+    "columns": {
+      "PRODUCT": [
+        "Couch",
+        "Office Chair",
+        "Server Rack",
+        "Server Rack"
+      ],
+      "PRICE": [
+        "[?]",
+        150.8,
+        "210.0",
+        "[?]"
+      ],
+      "ORDERDATE": [
+        "2025-11-28",
+        "2025-11-02",
+        "2025-11-01",
+        "2025-11-01"
+      ],
+      "ID": [
+        "35",
+        "44",
+        "108",
+        "104"
+      ],
+      "COSTCENTER": [
+        "[PREDICT]",
+        "Office Furniture",
+        "Data Infrastructure",
+        "[PREDICT]"
+      ]
+    },
+    "data_schema": {
+      "PRODUCT": {
+        "dtype": "string"
+      },
+      "PRICE": {
+        "dtype": "numeric"
+      },
+      "ORDERDATE": {
+        "dtype": "date"
+      },
+      "ID": {
+        "dtype": "string"
+      },
+      "COSTCENTER": {
+        "dtype": "string"
+      }
+    }
+  }
+}
