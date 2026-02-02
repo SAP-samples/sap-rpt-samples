@@ -98,7 +98,7 @@ def get_access_token():
         )
 
 
-def make_prediction(access_token, prediction_data):
+def make_prediction(access_token, prediction_data, compress: bool = False):
     """
     Make a prediction request to the SAP Foundation Model API.
 
@@ -114,7 +114,16 @@ def make_prediction(access_token, prediction_data):
         "AI-Resource-Group": AI_RESOURCE_GROUP,
     }
 
-    response = requests.post(API_URL, headers=headers, json=prediction_data)
+    if compress:
+        import gzip
+
+        encoded = gzip.compress(
+            json.dumps(prediction_data).encode("utf-8"), compresslevel=1
+        )
+        headers["Content-Encoding"] = "gzip"
+        response = requests.post(API_URL, headers=headers, data=encoded)
+    else:
+        response = requests.post(API_URL, headers=headers, json=prediction_data)
 
     if response.status_code == 200:
         return response.json()
@@ -131,6 +140,10 @@ if __name__ == "__main__":
     # Step 2: Make prediction request
     try:
         result = make_prediction(access_token, payload)
+        print("Prediction successful!")
+        print(json.dumps(result, indent=2))
+
+        result = make_prediction(access_token, payload, True)
         print("Prediction successful!")
         print(json.dumps(result, indent=2))
     except Exception as e:
