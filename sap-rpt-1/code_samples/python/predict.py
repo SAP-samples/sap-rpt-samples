@@ -25,6 +25,7 @@ payload = {
                 "name": "category",
                 "prediction_placeholder": "?",
                 "task_type": "classification",
+                "top_k": 1,
             }
         ]
     },

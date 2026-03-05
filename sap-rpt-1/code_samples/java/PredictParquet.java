@@ -69,7 +69,7 @@ class PredictParquet {
 
                 var entity = MultipartEntityBuilder.create()
                     .addTextBody("prediction_config",
-                        "{\"target_columns\":[{\"name\":\"category\",\"prediction_placeholder\":\"PLACEHOLDER\"}]}",
+                        "{\"target_columns\":[{\"name\":\"category\",\"prediction_placeholder\":\"PLACEHOLDER\",\"task_type\":\"classification\",\"top_k\":1}]}",
                         ContentType.APPLICATION_JSON)
                     .addTextBody("parse_data_types", "false")
                     .addBinaryBody("file", parquetFile.toFile(), ContentType.DEFAULT_BINARY, parquetFile.getFileName().toString())

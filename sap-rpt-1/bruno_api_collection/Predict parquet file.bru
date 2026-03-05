@@ -11,7 +11,7 @@ post {
 }
 
 body:multipart-form {
-  prediction_config: {"target_columns": [{"name": "category","prediction_placeholder": "PLACEHOLDER"}]}
+  prediction_config: {"target_columns":[{"name":"category","prediction_placeholder":"PLACEHOLDER","task_type":"classification","top_k":1}]}
   index_column: name
   parse_data_types: false
   file: @file(./product_data.parquet)

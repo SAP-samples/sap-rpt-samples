@@ -54,7 +54,12 @@ def predict_parquet_file(access_token, file_path):
     # Configure predictions for 'stock' columns with PLACEHOLDER
     prediction_config = {
         "target_columns": [
-            {"name": "category", "prediction_placeholder": "PLACEHOLDER"}
+            {
+                "name": "category",
+                "prediction_placeholder": "PLACEHOLDER",
+                "task_type": "classification",
+                "top_k": 1,
+            }
         ]
     }
 
