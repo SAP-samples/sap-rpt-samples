@@ -1,5 +1,5 @@
 # SAP Relational Pretrained Transformer Samples
-[![SAP](https://img.shields.io/badge/SAP%20RPT%201-grey?logo=sap)](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/sap-rpt-1) [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-rpt-1-oss)](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-1-oss)
+[![SAP](https://img.shields.io/badge/SAP%20RPT%201-grey?logo=sap)](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/sap-rpt-1) [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-rpt-samples)](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-samples)
 
 ## Description
 This repository contains a Bruno API collection and code samples for using SAP Relational Pretrained Transformer (RPT) models.
@@ -39,3 +39,5 @@ If you wish to contribute code, offer fixes or improvements, please send a pull 
 
 ## License
 Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+
+Detailed information including third-party components and their licensing/copyright information is available via the [REUSE tool](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-samples).
