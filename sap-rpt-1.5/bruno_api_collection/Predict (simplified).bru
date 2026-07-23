@@ -1,0 +1,60 @@
+meta {
+  name: Predict (simplified)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/predict
+  body: json
+  auth: inherit
+}
+
+headers {
+  :
+}
+
+body:json {
+  {
+    "prediction_config": {
+      "target_columns": [
+        {
+          "name": "category",
+          "prediction_placeholder": "?",
+          "task_type": "classification",
+          "top_k": 1
+        }
+      ],
+      "explanations": {
+        "top_column_scores": 4,
+        "top_relevant_context_rows": 3
+      }
+    },
+    "columns": {
+      "product": [
+        "Laptop",
+        "Mouse",
+        "Keyboard",
+        "Monitor"
+      ],
+      "price": [
+        899,
+        25,
+        75,
+        350
+      ],
+      "category": [
+        "Electronics",
+        "Accessories",
+        "Accessories",
+        "?"
+      ],
+      "stock": [
+        "150",
+        "500",
+        "320",
+        "200"
+      ]
+    }
+  }
+}

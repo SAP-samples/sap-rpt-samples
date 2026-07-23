@@ -1,0 +1,18 @@
+meta {
+  name: Predict parquet file
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/predict_parquet
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  prediction_config: {"target_columns":[{"name":"category","prediction_placeholder":"PLACEHOLDER","task_type":"classification","top_k":1}],"explanations":{"top_column_scores":4,"top_relevant_context_rows":3}}
+  index_column: name
+  parse_data_types: false
+  file: @file(./product_data.parquet)
+}
