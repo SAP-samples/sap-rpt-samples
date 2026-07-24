@@ -2,10 +2,10 @@
 [![SAP](https://img.shields.io/badge/SAP%20RPT%201-grey?logo=sap)](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/sap-rpt-1) [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-rpt-samples)](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-samples)
 
 ## Description
-This repository contains a Bruno API collection and code samples for using SAP Relational Pretrained Transformer (RPT) models.
+This repository contains a Bruno API collections and code samples for using SAP Relational Pretrained Transformer (RPT) models.
 
-## SAP-RPT-1
-The Bruno API collection and code in [/sap-rpt-1](/sap-rpt-1/) show how to make predictions on tabular data using the REST API of SAP RPT-1.<br>Please note that you need a service instance of SAP AI Core (service plan "extended") and a deployment of the model (e.g. `sap-rpt-1-small` or `sap-rpt-1-large` - see [SAP AI Core documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core?locale=en-US) and [tutorials](https://developers.sap.com/tutorials/ai-core-genaihub-provisioning..html)).
+## Usage
+The Bruno API collections and code in the model subdirectories (e.g. [/sap-rpt-1.5](/sap-rpt-1.5/)) show how to make predictions on tabular data using SAP RPT models.<br>Please note that you need a service instance of SAP AI Core (service plan "extended") and a deployment of the model (e.g. `sap-rpt-1.5` or `sap-rpt-1.5-large` - see [SAP AI Core documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core?locale=en-US) and [tutorials](https://developers.sap.com/tutorials/ai-core-genaihub-provisioning..html)).
 
 ### Get Service Key
 
