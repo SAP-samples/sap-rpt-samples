@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "SAP-RPT-1.5",
+  "name": "SAP-RPT-1.6",
   "type": "collection",
   "ignore": [
     "node_modules",

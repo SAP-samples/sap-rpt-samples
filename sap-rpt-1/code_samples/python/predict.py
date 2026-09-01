@@ -29,7 +29,7 @@ payload = {
             }
         ]
     },
-    "parse_data_types": "true",
+    "parse_data_types": True,
     "data_schema": {
         "id": {"dtype": "numeric"},
         "product": {"dtype": "string"},
