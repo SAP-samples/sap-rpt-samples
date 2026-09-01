@@ -1,0 +1,5 @@
+# Core dependencies for the SAP-RPT-1.5 public API demo
+requests>=2.31
+pandas>=2.0
+pyarrow>=14.0
+python-dotenv>=1.0
