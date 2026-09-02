@@ -1,0 +1,10 @@
+vars {
+  baseUrl: {{process.env.API_URL}}/v2/inference/deployments/{{deploymentId}}
+  authUrl: {{process.env.AUTH_URL}}/oauth/token
+  clientId: {{process.env.CLIENT_ID}}
+  resourceGroup: default
+  deploymentId:
+}
+vars:secret [
+  clientSecret
+]

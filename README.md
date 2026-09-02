@@ -2,10 +2,10 @@
 [![SAP](https://img.shields.io/badge/SAP%20RPT%201-grey?logo=sap)](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/sap-rpt-1) [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-rpt-samples)](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-samples)
 
 ## Description
-This repository contains a Bruno API collections and code samples for using SAP Relational Pretrained Transformer (RPT) models.
+This repository contains Bruno API collections and code samples for using SAP Relational Pretrained Transformer (RPT) models.
 
 ## Usage
-The Bruno API collections and code in the model subdirectories (e.g. [/sap-rpt-1.5](/sap-rpt-1.5/)) show how to make predictions on tabular data using SAP RPT models.<br>Please note that you need a service instance of SAP AI Core (service plan "extended") and a deployment of the model (e.g. `sap-rpt-1.5` or `sap-rpt-1.5-large` - see [SAP AI Core documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core?locale=en-US) and [tutorials](https://developers.sap.com/tutorials/ai-core-genaihub-provisioning..html)).
+The Bruno API collections and code in the model subdirectories (e.g. [/sap-rpt-1.6](/sap-rpt-1.6/)) show how to make predictions on tabular data using SAP RPT models.<br>Please note that you need a service instance of SAP AI Core (service plan "extended") and a deployment of the model (for example `sap-rpt-1.6` - see [SAP AI Core documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core?locale=en-US) and [tutorials](https://developers.sap.com/tutorials/ai-core-genaihub-provisioning..html)).
 
 ### Get Service Key
 
@@ -38,6 +38,6 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
-Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
 
 Detailed information including third-party components and their licensing/copyright information is available via the [REUSE tool](https://api.reuse.software/info/github.com/SAP-samples/sap-rpt-samples).
